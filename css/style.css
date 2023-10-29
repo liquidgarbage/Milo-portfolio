@@ -1,5 +1,7 @@
+/* General CSS */
 * {
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 body {
@@ -20,4 +22,117 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 10vh;
+  font-size: 30px;
+}
+
+.nav-items {
+  margin: 30px;
+}
+
+/* Banner */
+.hero-banner {
+  height: 200px;
+  width: 100%;
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#titles {
+  color: aliceblue;
+  margin: 50px 50px;
+}
+
+/* Main */
+main {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+height: 70%;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: row;
+  padding: 20 px;
+  align-items: center;
+  justify-content:space-around;
+}
+
+/* About Me */
+#about {
+  display: grid;
+  justify-items: center;
+  grid-gap: 10px;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "title words"
+  "face words";
+}
+
+#title {
+  grid-area: title;
+}
+
+#face {
+  width: 20%;
+  grid-area: face;
+}
+
+.words {
+  width: 50%;
+  grid-area: words;
+}
+
+/* Work */
+#work {
+  display: flex;
+  align-content: space-evenly;
+  align-items: center;
+
+}
+
+#work-grid {
+  width: 50%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "access access" 
+  "gift g-clone"
+  "barber place";
+}
+
+/* Footer
+footer {
+margin-left: auto;
+margin-right: auto;
+} */
+/* Contact */
+#contact {
+display: flex;
+justify-content: center;
+}
+
+.links {
+display: flex;
+justify-content: center;
+justify-content: space-evenly;
 }

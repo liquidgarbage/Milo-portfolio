@@ -2,44 +2,78 @@
 <html lang="en-gb">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <h1>Milo Theobald</h1>
     <nav>
+      <a class="nav-items" href="#about">About Me</a>
+      <a class="nav-items" href="#work">Work</a>
+      <a class="nav-items" href="#contact">Contact Me</a>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2 id="titles">Librarian / Barber / Web Developer (in training)</h2>
     </div>
   </section>
-
+  <!-- main -->
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <h2 id="title">About Me</h2>
+      <img src="../images/face.jpeg" id="face" alt="white person with short hair wearing sweater vest with cat on lap">
+      <p class="words">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ea
+        officia est debitis praesentium cumque hic illo ut autem, ipsa
+        inventore sequi vel perspiciatis, nesciunt possimus, repellendus
+        deserunt? Ab, quidem.
+      </p>
     </section>
-
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Work</h2>
-    </section>
-
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+      <div id="work-grid">
+        <div id="access">
+          <a href="https://liquidgarbage.github.io/01-accessible-marketing-website/">Accessible HTML</a>
+        </div>
+        <div id="gift">
+          <a href="https://liquidgarbage.github.io/birthday-gift-site">Gift Site</a>
+        </div>
+        <div id="g-clone">
+          <a href="https://liquidgarbage.github.io/google-clone/">Google Clone</a>
+        </div>
+        <div id="barber">
+          <a href="">Barbering</a>
+        </div>
+        <div id="place">
+          <a href="">placeholder</a>
+        </div>
+      </div>
     </section>
   </main>
+  <!-- footer -->
+  <footer class="page-section-contact"></footer>
+  <!-- contact -->
+  <h4 id="contact">Contact Me</h4>
+  <div class="links">
+    <h6>milotheo91@gmail.com</h6>
+    <!-- email with mail me thing -->
+    <h6>Linkdin</h6>
+    <!-- linkdin -->
+    <h6>Github</h6>
+    <!-- link to github -->
+  </div>
+  </footer>
 </body>
 
 </html>
