@@ -12,25 +12,25 @@
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Milo Theobald</h1>
+    <h1 id=name>Milo Theobald</h1>
     <nav>
       <a class="nav-items" href="#about">About Me</a>
       <a class="nav-items" href="#work">Work</a>
       <a class="nav-items" href="#contact">Contact Me</a>
     </nav>
   </header>
-
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2 id="titles">Librarian / Barber / Web Developer (in training)</h2>
+      <h2 id="desc">Librarian / Barber / Web Developer (in training)</h2>
     </div>
   </section>
   <!-- main -->
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2 id="title">About Me</h2>
+      <h2 class="title">About Me</h2>
+      <div class="vl"></div>
       <!-- <img src="../images/face.jpeg" id="face"
           alt="white person with short hair wearing sweater vest with cat on lap"> -->
       <p id="words">
@@ -41,28 +41,31 @@
     </section>
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <h2 id="workT">Work</h2>
+      <h2 class="title">Work</h2>
+      <div class="vl"></div>
       <div id="work-grid">
-        <div id="access">
+        <div class="cell" id="access">
           <a href="https://liquidgarbage.github.io/01-accessible-marketing-website/">Accessible HTML</a>
         </div>
-        <div id="gift">
+        <div class="cell" id="gift">
           <a href="https://liquidgarbage.github.io/birthday-gift-site">Gift Site</a>
         </div>
-        <div id="g-clone">
+        <div class="cell" id="g-clone">
           <a href="https://liquidgarbage.github.io/google-clone/">Google Clone</a>
         </div>
-        <div id="barber">
+        <div class="cell" id="barber">
           <a href="">Barbering</a>
         </div>
-        <div id="pre">
+        <div class="cell" id="pre">
           <a href=" https://liquidgarbage.github.io/prework-study-guide/">Prework Study Guide</a>
         </div>
       </div>
     </section>
     <!-- contact -->
     <section class="page-section" id="contact">
-      <h2>Contact Me</h2>
+      <h2 class="title">Contact
+         Me</h2>
+      <div class="vl"></div>
       <div class="links">
         <a href="mailto:milotheo91@gmail.com">milotheo91@gmail.com</a>
         <a href="http://linkedin.com/in/milo-theobald">Linkdin</a>
@@ -71,5 +74,4 @@
     </section>
   </main>
 </body>
-
 </html>

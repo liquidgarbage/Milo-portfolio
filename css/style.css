@@ -1,8 +1,13 @@
 /* General CSS */
+:root {
+  --brown: #605243;
+  --green: #A5A58D;
+  --cream: #FFF1E6;
+  --umber: #A06340;
+  --orange: #AF6B46;
+}
 * {
-  box-sizing: border-box;
-  border: 1px solid black;
-  color: #605243;
+  color:var(--brown);
 }
 
 body {
@@ -30,49 +35,52 @@ p {
 header {
   display: flex;
   flex-direction:row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  height: 20vh;
+  background-color: var(--green);
+}
+
+#name {
+  padding-left: 10%;
 }
 
 /* Nav */
 nav {
   display: flex;
   flex-direction: row;
-  padding: 10vh;
   font-size: 30px;
-}
-
-.nav-items {
-  margin: 30px;
+  width: 40%;
+  justify-content:space-evenly;
 }
 
 /* Banner */
 .hero-banner {
-  height: 200px;
+  height: 20vh;
   width: 100%;
-  background-image: url(../images/02-hero-bg.jpg);
+  background-image: url(../images/teak.png);
   background-size: cover;
-  background-position: center;
+  background-position:100%;
 }
 
-#titles {
-  color: aliceblue;
-  margin: 50px 50px;
+#desc {
+  color: var(--cream);
+  align-self: center;
+  padding: 3%;
 }
 
 /* Main */
-
 .page-section {
-display: grid;
-grid-template-columns: 20% 80%;
-grid-template-rows: 100%;
-grid-gap: 10px;
-grid-column-end: auto;
-grid-template-areas: 
-"about about"
-"work work"
-"contact contact";
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  display: grid;
+  grid-template-columns: 19% 2% 79%;
+  grid-template-rows: 100% ;
+  grid-gap: 10px;
+  grid-column-end: auto;
+  grid-template-areas: 
+  "about about"
+  "work work"
+  "contact contact";
 }
 #about {
   grid-area: about;
@@ -83,18 +91,21 @@ grid-template-areas:
 #contact {
   grid-area: contact;
 }
+.vl {
+  border-left: 5px solid var(--brown);
+}
+
+.title {
+margin-left: auto;
+margin-right: auto;
+}
 
 /* About Me */
 
-
-
-
-/* #words {
-  margin: 10px;
-  width: 50%;
+#words {
+  width: 80%;
   height: auto;
-} */
-
+}
 
 /* Work */
 #work {
@@ -102,55 +113,62 @@ grid-template-areas:
 }
 
 #work-grid {
-  width: 50%;
+  width: 90%;
   display: grid;
-  grid-template-rows: 20vh 15vh 15vh;
+  grid-template-rows: 60vh 20vh 20vh;
   grid-template-columns: 50% 50%;
-  grid-auto-rows: minmax(250px, auto);
-  grid-auto-columns: minmax(100px, auto);
+  grid-auto-rows: minmax(5vh, auto);
+  grid-auto-columns: minmax(3vh, auto);
   grid-template-areas: 
   "access access" 
   "gift g-clone"
   "barber pre";
 }
 
+.cell {
+  background-repeat: no-repeat;
+  background-size:100% ;
+  height: auto;
+  border: 4px solid var(--brown);
+}
+
 #access {
   grid-area: access;
-  background-image: ;
+  background-image: url(../images/access.png);
 }
 
 #gift {
   grid-area: gift;
   background-image: url(../images/gift-cover.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
-
 
 #g-clone {
   grid-area: g-clone;
   background-image: url(../images/google.png);
-  background-repeat: no-repeat;
-  background-size:100%;
 }
 
 #barber {
   grid-area: barber;
-  background-image: ;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-image:url(../images/barber.jpeg) ;
 }
 
 #pre {
   grid-area: pre;
-  background-image: ;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-image:url(../images/prework.png) ;
+}
+
+#access a,#gift a, #g-clone a, #barber a, #pre a {
+color: var(--cream);
+background-color: var(--brown);
+padding: 5px;
 }
 
 /* Contact */
-
-
 #contact {
   grid-area: contact;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
