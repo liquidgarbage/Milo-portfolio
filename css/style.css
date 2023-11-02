@@ -72,8 +72,9 @@ nav {
   width: 100%;
 }
 
+/* image of me */
 #face {
-  margin: 10%;
+  margin: 5% 5% 5% 30%;
   height: auto;
   width: 20%;
   border: solid 3px var(--cream);
@@ -110,12 +111,12 @@ nav {
 
 .title {
 margin-left: auto;
-margin-right: auto;
+margin-right: 10%;
 }
 
 /* About Me */
 #words {
-  width: 80%;
+  width: 95%;
   height: auto;
 }
 
