@@ -30,11 +30,11 @@ N/A
 To be used as a portfolio to show work to others
 
 Desktop View
-    ![desktop screen](Milo-portfolio/images/desktop.png)
+    ![desktop screen](images/desktop.png)
 
 
 Mobile View
-    ![phone screen](Milo-portfolio/images/mobile.png)
+    ![phone screen](images/mobile.png)
 
 
 ## Credits
